@@ -12,6 +12,7 @@ export default async function Category() {
         {data.map((category:categoryType)=><div key={category.idCategory} className="cards my-7">
           <div className="name text-center font-bold">
             <p>{category.strCategory}</p>
+            <h1>NOOR</h1>
           </div>
           <div className="image flex justify-center align-middle">
             <Image src={category.strCategoryThumb} alt='image' width={500} height={500}/>
