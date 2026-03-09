@@ -10,7 +10,7 @@ type DisplayMultiMealsProps = {
 export default function DisplayMultiMeals({ meals }: DisplayMultiMealsProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      {meals.map((meal) => (
+      {meals?.map((meal) => (
         <div key={meal.idMeal} className="card p-3 shadow-md rounded-lg">
           <div className="image">
             <Image
