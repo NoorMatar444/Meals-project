@@ -5,7 +5,7 @@ import { displayMealType } from '../Types/displayMeal.type'
 export default function DisplayMeal({ meals }:{meals:displayMealType[]}) {
     return (
         <>
-        {meals.map((meals)=>{
+        {meals?.map((meals)=>{
             return  <div key={meals.idMeal} className="card my-7">
                 <div className="name text-center font-bold">
                     <p>{meals?.strMeal}</p>
