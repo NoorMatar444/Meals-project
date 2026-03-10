@@ -39,13 +39,13 @@ export default function FilterByCategory() {
         <>
             {isMealExist ? <div className="container w-[80%] mx-auto my-20">
                 <form onSubmit={handleSubmit(handleCategorySearch)} className="flex flex-col sm:flex-row justify-center items-center">
-                    <input {...register("name")} className='w-1/2 h-10 rounded-2xl border-2' type="search" placeholder='Enter Category'></input>
+                    <input {...register("name")} className='w-1/2 h-10 rounded-2xl border-2' autoComplete='off' type="search" placeholder='Enter Category'></input>
                     <Button type="submit" className='mx-3 my-4'>Search</Button>
                 </form>
                 <DisplayMultiMeals meals={meals} />
             </div> : <div className="container w-[80%] mx-auto my-20">
                 <form onSubmit={handleSubmit(handleCategorySearch)} className="flex flex-col sm:flex-row justify-center items-center">
-                    <input {...register("name")} className='w-1/2 h-10 rounded-2xl border-2' type="search" placeholder='Enter Category'></input>
+                    <input {...register("name")} className='w-1/2 h-10 rounded-2xl border-2' autoComplete='off' type="search" placeholder='Enter Category'></input>
                     <Button type="submit" className='mx-3 my-4'>Search</Button>
                 </form>
                 <h1 className='text-center text-2xl font-bold mt-10'>No Meal Found</h1>
